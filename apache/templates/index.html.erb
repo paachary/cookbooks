@@ -1,0 +1,17 @@
+<html>
+  <title> Welcome </title>
+  <body>
+    <h1> Apache WebServer </h1>
+    <h2> This is installed via Chef Recipe by <%= @name %> </h2>
+    <p>
+           __|  __|_  ) <br>
+           _ |  (     /   Amazon Linux AMI <br>
+          ___|___|___| <br><br>
+	Hostname = <%= node['hostname'] %> <br>
+	Ipaddress = <%= node['ipaddress'] %> <br>
+	Total Memory = <%= node['memory']['total'] %> <br>
+	Cpu Size = <%= node['cpu']['0']['mhz'] %> <br>
+    </p>
+  </body>
+</html>
+
